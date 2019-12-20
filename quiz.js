@@ -217,12 +217,13 @@ var $indicators = $('<ol>')
           // if we've reached the final question
           // set the results text
           if (last_question) {
-            $results_title.html(resultsText(state));
+            $results_title.html(resultsTitle(state));
             $results_ratio.text(
               "Du hast " +
               Math.round(100*(state.correct/state.total)) +
               "% der Fragen richtig beantwortet!"
             );
+            $results_text.text(resultsText(state));
             $indicators.removeClass('show');
             // indicate the question number
             $indicators.find('li')
@@ -246,10 +247,7 @@ var $indicators = $('<ol>')
         $('.sweet-overlay').on('click', next);
 
       });
-
     });
-
-
   });
 
 
@@ -265,6 +263,10 @@ var $indicators = $('<ol>')
 
   var $results_ratio = $('<div>')
     .attr('class', 'results-ratio')
+    .appendTo($results_slide);
+
+  var $results_text = $('<div>')
+    .attr('class', 'results_text')
     .appendTo($results_slide);
 
   var $restart_button = $("<div>")
@@ -291,33 +293,61 @@ var $indicators = $('<ol>')
 
 }
 
-function resultsText(state) {
+function resultsTitle(state) {
 
   var ratio = state.correct / state.total;
   var text;
 
   switch (true) {
     case (ratio === 1):
-      text = "Wow! Volle Punktzahl! Die Geschenke hast du dir redlich verdient. Du kannst sie hier öffnen: ";
+      text = "Wow! Volle Punktzahl!";
       break;
     case (ratio > 0.9):
-      text = "Sehr gut! Deine Geschenke kannst du dir hier ansehen: ";
+      text = "Sehr gut! Fast alles richtig!";
       break;
     case (ratio > 0.60):
-      text = "Nicht schlecht, aber für die Geschenke musst du besser werden. ;)";
+      text = "Mehr als die Hälfte!";
       break;
     case (ratio > 0.5):
-      text = "Naja, die Hälfte hast du zumindest richtig beantwortet..";
+      text = "Du hast die Hälfte der Fragen richtig beantwortet!";
       break;
     case (ratio < 0.5 && ratio !== 0):
-      text = "Scheinbar war das Quiz noch zu schwer für dich. Versuch's doch gleich nochmal! ;)";
+      text = "Oh je..";
       break;
     case (ratio === 0):
-      text = "Keine richtige Antwort? Komisch.. War das deine Absicht? ;)";
+      text = "Keine richtige Antwort?";
       break;
   }
   return text;
-
 }
+
+function resultsTitle(state) {
+
+  var ratio = state.correct / state.total;
+  var text;
+
+  switch (true) {
+    case (ratio === 1):
+      text = "Die Geschenke hast du dir redlich verdient. Du kannst sie hier öffnen: ";
+      break;
+    case (ratio > 0.9):
+      text = "Das war klasse, aber deine Geschenke bekommst du aber erst bei der vollen Punktzahl..";
+      break;
+    case (ratio > 0.60):
+      text = "Nicht schlecht, aber für die Geschenke musst du noch besser werden. ;)";
+      break;
+    case (ratio > 0.5):
+      text = "Naja, nicht gut, aber auch nicht schlecht.. Geschenke gibt's aber nur für gute Leistungen ;)";
+      break;
+    case (ratio < 0.5 && ratio !== 0):
+      text = "Scheinbar war das Quiz noch zu schwer für dich. Versuch's doch gleich nochmal!";
+      break;
+    case (ratio === 0):
+      text = "Komisch.. War das deine Absicht? ;) Geschenke gibt es dafür jedenfalls nicht..";
+      break;
+  }
+  return text;
+}
+
 })(jQuery);
 
