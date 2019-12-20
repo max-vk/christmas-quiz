@@ -266,7 +266,7 @@ var $indicators = $('<ol>')
     .appendTo($results_slide);
 
   var $results_text = $('<div>')
-    .attr('class', 'results_text')
+    .attr('class', 'results-ratio')
     .appendTo($results_slide);
 
   var $restart_button = $("<div>")
