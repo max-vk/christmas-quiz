@@ -174,7 +174,7 @@ var $indicators = $('<ol>')
       // answer dialogue
       if (correct) {
         opts = $.extend(opts, {
-          title: "Nice!",
+          title: "Richtig!",
           text: "Gut gemacht" + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
@@ -185,10 +185,10 @@ var $indicators = $('<ol>')
         });
       } else {
         opts = $.extend(opts, {
-          title: "Drat",
+          title: "Mist",
           text: (
-            "Nein, nicht ganz richtig!<br/><br/>" +
-            "Die richtige Antwort ist \"" +
+            "Leider nicht richtig!<br/><br/>" +
+            "Die richtige Antwort lautet \"" +
             question.answers[question.correct.index] + "\"." + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
@@ -223,8 +223,6 @@ var $indicators = $('<ol>')
               Math.round(100*(state.correct/state.total)) +
               "% der Fragen richtig beantwortet!"
             );
-            $twitter_link.attr('href', tweet(state, quiz_opts));
-            $facebook_link.attr('href', facebook(state, quiz_opts));
             $indicators.removeClass('show');
             // indicate the question number
             $indicators.find('li')
