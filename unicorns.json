@@ -2,17 +2,18 @@
   "questions": [
     {
       "answers": [
-        "Loch Ness Monster",
-        "Centaur",
-        "Unicorn",
-        "Mermaid"
+        "Gryffindor",
+        "Hufflepuff",
+        "Ravenclaw",
+        "Slytherin"
       ],
       "correct": {
-        "index": 2,
-        "text": "The unicorn is a mythical creature. Strong, wild, and fierce, it was impossible to tame by man. Plinie, the Roman naturalist records it as \"a very ferocious beast, similar in the rest of its body to a horse, with the head of a deer, the feet of an elephant, the tail of a boar, a deep, bellowing voice, and a single black horn, two cubits in length, standing out in the middle of its forehead.\""
+        "index": 1,
+        "text": "Natürlich Hufflepuff! Stets treu dem Motto \"In Hufflepuff dagegen ist man gerecht und treu. Man hilft dem andern, wo man kann und hat vor Arbeit keine Scheu.\" Das war jetzt aber sehr einfach!"
       },
       "number": 1,
-      "prompt": "Which of the following is the most real?"
+      "image": "img/houses.jpg",
+      "prompt": "Zu welchem dieser Harry Potter Häuser passt Lea am ehesten?"
     },
     {
       "answers": [
@@ -39,6 +40,5 @@
       "prompt": "What shade of white is this unicorn?"
     }
   ],
-  "title": "How well do you know real creatures?",
-  "url": "http://urbaninstitute.github.io/quick-quiz/"
+  "title": "Leas Weihnachtsquiz über alles und die Welt"
 }

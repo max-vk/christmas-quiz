@@ -165,7 +165,7 @@ var $indicators = $('<ol>')
       var opts = {
         allowOutsideClick : false,
         allowEscapeKey : false,
-        confirmButtonText: "Next Question",
+        confirmButtonText: "Nächste Frage",
         html : true,
         confirmButtonColor: "#0096D2"
       };
@@ -175,7 +175,7 @@ var $indicators = $('<ol>')
       if (correct) {
         opts = $.extend(opts, {
           title: "Nice!",
-          text: "Well done" + (
+          text: "Gut gemacht" + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
               question.correct.text +
@@ -187,8 +187,8 @@ var $indicators = $('<ol>')
         opts = $.extend(opts, {
           title: "Drat",
           text: (
-            "Nope, not quite right!<br/><br/>" +
-            "The correct answer was \"" +
+            "Nein, nicht ganz richtig!<br/><br/>" +
+            "Die richtige Antwort ist \"" +
             question.answers[question.correct.index] + "\"." + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
@@ -201,7 +201,7 @@ var $indicators = $('<ol>')
       }
 
       if (last_question) {
-        opts.confirmButtonText = "See your results";
+        opts.confirmButtonText = "Ergebnis ansehen";
       }
 
       // bind click event to answer button,
@@ -219,9 +219,9 @@ var $indicators = $('<ol>')
           if (last_question) {
             $results_title.html(resultsText(state));
             $results_ratio.text(
-              "You got " +
+              "Du hast " +
               Math.round(100*(state.correct/state.total)) +
-              "% of the questions correct!"
+              "% der Fragen richtig beantwortet!"
             );
             $twitter_link.attr('href', tweet(state, quiz_opts));
             $facebook_link.attr('href', facebook(state, quiz_opts));
@@ -273,22 +273,9 @@ var $indicators = $('<ol>')
     .attr("class", "quiz-answers")
     .appendTo($results_slide);
 
-  var $social = $("<div>")
-    .attr('class', 'results-social')
-    .html('<div id = "social-text">Did you like the quiz? Share your results with your friends, so they can give it a shot!</div>')
-    .appendTo($results_slide);
-
-  var $twitter_link = $('<a>')
-    .html('<span class="social social-twitter follow-tw"></span>')
-    .appendTo($social);
-
-  var $facebook_link = $('<a>')
-    .html('<span class="social social-facebook follow-fb"></span>')
-    .appendTo($social);
-
   $("<button>")
     .attr('class', 'quiz-button btn')
-    .text("Try again?")
+    .text("Nochmal versuchen?")
     .click(function() {
       state.correct = 0;
       $quiz.carousel(0);
@@ -313,49 +300,26 @@ function resultsText(state) {
 
   switch (true) {
     case (ratio === 1):
-      text = "Wow&mdash;perfect score!";
+      text = "Wow! Volle Punktzahl! Die Geschenke hast du dir redlich verdient. Du kannst sie hier öffnen: ";
       break;
     case (ratio > 0.9):
-      text = "Awesome job, you got most of them right.";
+      text = "Sehr gut! Deine Geschenke kannst du dir hier ansehen: ";
       break;
     case (ratio > 0.60):
-      text = "Pretty good, we'll say that's a pass.";
+      text = "Nicht schlecht, aber für die Geschenke musst du besser werden. ;)";
       break;
     case (ratio > 0.5):
-      text = "Well, at least you got half of them right&hellip;";
+      text = "Naja, die Hälfte hast du zumindest richtig beantwortet..";
       break;
     case (ratio < 0.5 && ratio !== 0):
-      text = "Looks like this was a tough one, better luck next time.";
+      text = "Scheinbar war das Quiz noch zu schwer für dich. Versuch's doch gleich nochmal! ;)";
       break;
     case (ratio === 0):
-      text = "Yikes, none correct. Well, maybe it was rigged?";
+      text = "Keine richtige Antwort? Komisch.. War das deine Absicht? ;)";
       break;
   }
   return text;
 
 }
-
-
-function tweet(state, opts) {
-
-  var body = (
-    "I got " + state.correct +
-    " out of " + state.total +
-    " on @taxpolicycenter’s \"" + opts.title +
-    "\" quiz. Test your knowledge here: " + opts.url
-  );
-
-  return (
-    "http://twitter.com/intent/tweet?text=" +
-    encodeURIComponent(body)
-  );
-
-}
-
-function facebook(state, opts) {
-  return "https://www.facebook.com/sharer/sharer.php?u=" + opts.url;
-}
-
-
 })(jQuery);
 
