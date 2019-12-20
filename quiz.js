@@ -321,7 +321,7 @@ function resultsTitle(state) {
   return text;
 }
 
-function resultsTitle(state) {
+function resultsText(state) {
 
   var ratio = state.correct / state.total;
   var text;

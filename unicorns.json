@@ -9,7 +9,7 @@
       ],
       "correct": {
         "index": 1,
-        "text": "Natürlich Hufflepuff! Stets treu dem Motto \"In Hufflepuff dagegen ist man gerecht und treu. Man hilft dem andern, wo man kann und hat vor Arbeit keine Scheu.\" Das war aber eigentlich sehr einfach!"
+        "text": "Natürlich Hufflepuff! Stets treu dem Motto \"In Hufflepuff dagegen ist man gerecht und treu. Man hilft dem andern, wo man kann und hat vor Arbeit keine Scheu.\""
       },
       "number": 1,
       "image": "img/houses.jpg",
@@ -17,7 +17,8 @@
     },
     {
       "answers": [
-        "True"
+        "True",
+        "False"
       ],
       "correct": {
         "index": 0
