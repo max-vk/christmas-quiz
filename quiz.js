@@ -82,7 +82,7 @@ var $indicators = $('<ol>')
 
   $("<button>")
     .attr('class', 'quiz-button btn')
-    .text("Take the quiz!")
+    .text("Starte das Quiz!")
     .click(function() {
       $quiz.carousel('next');
       $indicators.addClass('show');
@@ -175,7 +175,7 @@ var $indicators = $('<ol>')
       if (correct) {
         opts = $.extend(opts, {
           title: "Richtig!",
-          text: "Gut gemacht" + (
+          text: "Gut gemacht." + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
               question.correct.text +

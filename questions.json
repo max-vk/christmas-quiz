@@ -39,7 +39,7 @@
       ],
       "correct": {
         "index": 2,
-        "text": "Diese urkomische Szene und die großartige Gesangseinlage von Jake kann man ja gar nicht vergessen."
+        "text": "Diese urkomische Szene und die großartige Gesangseinlage von Jake kann man ja gar nicht vergessen. Aber zur Erinnerung (und weil man sie definitiv nochmal sehen sollte): https://www.youtube.com/watch?v=ffyKY3Dj5ZE"
       },
       "number": 3,
       "image": "img/houses.jpg",
@@ -86,9 +86,25 @@
         "index": 0,
         "text": "Anni und Steven kennen sich tatsächlich am Längsten!"
       },
-      "number": 5,
+      "number": 6,
       "image": "img/houses.jpg",
       "prompt": "Wer von diesen Leuten kennt sich am Längsten?"
+    },
+    {
+      "answers": [
+        "Karamo",
+        "Bobby",
+        "Tan",
+        "Jonathan",
+        "Antoni"
+      ],
+      "correct": {
+        "index": 4,
+        "text": "Natürlich, es ist Antoni! Auch wenn Jonathan definitiv der Runner-Up ist."
+      },
+      "number": 7,
+      "image": "img/houses.jpg",
+      "prompt": "Welches Mitglied vom \"Queer Eye\"-Cast ist unser Liebling?"
     }
   ],
   "title": "Leas Weihnachtsquiz über alles und die Welt"
