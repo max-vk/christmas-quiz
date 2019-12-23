@@ -121,6 +121,36 @@
     },
     {
       "answers": [
+        "Steven",
+        "Robert",
+        "Flo",
+        "Domi"
+      ],
+      "correct": {
+        "index": 2,
+        "text": "Flo ist auf jeden Fall der Typ, der am ehesten das Tanzbein schwingt!"
+      },
+      "number": 9,
+      "image": "img/tanz.jpg",
+      "prompt": "Wer ist die Dancing Queen der Clique?"
+    },
+    {
+      "answers": [
+        "Lisa",
+        "Sarah",
+        "Imke",
+        "... Du!"
+      ],
+      "correct": {
+        "index": 3,
+        "text": "Du bist laut eigener Aussage die Person, die am ehesten zu Singen anfängt. ;)"
+      },
+      "number": 10,
+      "image": "img/singstar.jpg",
+      "prompt": "Und wer ist der Sing Star der Clique?"
+    },
+    {
+      "answers": [
         "Stumme Traube",
         "Hörgeschädigte Pflaume",
         "Blinde Kuh",
@@ -130,7 +160,7 @@
         "index": 3,
         "text": "Taube Nuss, das ist doch klar!"
       },
-      "number": 9,
+      "number": 11,
       "image": "img/taubenuss.jpg",
       "prompt": "Wie heißt das Maskottchen des Bertels Beer Pong Vereins?"
     },
@@ -145,7 +175,7 @@
         "index": 0,
         "text": "Es waren natürlich Jonas und Julia. Zu schade, dass die beiden zumindest gemeinsam den Titel nicht erneut verteidigen werden können.."
       },
-      "number": 10,
+      "number": 12,
       "image": "img/koenigspaar.jpg",
       "prompt": "Welche dieser Paare sind zweifache Gewinner des Bertels Beer Pong Turniers?"
     }
