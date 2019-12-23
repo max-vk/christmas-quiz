@@ -13,32 +13,82 @@
       },
       "number": 1,
       "image": "img/houses.jpg",
-      "prompt": "Zu welchem dieser Harry Potter Häuser passt Lea am ehesten?"
+      "prompt": "Zu welchem dieser Harry Potter Häuser passt du am ehesten?"
     },
     {
       "answers": [
-        "True",
-        "False"
+        "Sense 8",
+        "Queer Eye",
+        "Brooklyn Nine-Nine",
+        "Glee"
       ],
       "correct": {
-        "index": 0
+        "index": 3,
+        "text": "Glee ist die richtige Antwort! Als Amy Santiago weißt du dies natürlich. ;)"
       },
       "number": 2,
-      "prompt": "Unicorns are real?"
+      "image": "img/houses.jpg",
+      "prompt": "Zu welcher dieser Serien hat sich die Clique noch nicht zugeordnet?"
     },
     {
       "answers": [
-        "Marshmallow",
-        "Moon glow",
-        "Egg shell"
+        "Everybody - Backstreet Boys",
+        "Bye Bye Bye - *NSYNC",
+        "I Want It That Way - Backstreet Boys",
+        "Wodka E - Balek"
       ],
       "correct": {
-        "index": 1
+        "index": 2,
+        "text": "Diese urkomische Szene und die großartige Gesangseinlage von Jake kann man ja gar nicht vergessen."
       },
-      "image": "unicorn.jpg",
-      "image_credit": "Random dude from the Interwebs",
       "number": 3,
-      "prompt": "What shade of white is this unicorn?"
+      "image": "img/houses.jpg",
+      "prompt": "Welches Lied singen die Verdächtigen in Staffel 5 Folge 17 von Brooklyn Nine-Nine?"
+    },
+    {
+      "answers": [
+        "10297 Tage",
+        "9135 Tage",
+        "8549 Tage",
+        "9140 Tage"
+      ],
+      "correct": {
+        "index": 3,
+        "text": "Tatsächlich bist du an diesem Datum 9140 Tage alt! Das sieht zwar nach viel aus, ist aber eigentlich nur ein wenig mehr als ein Vierteljahrhundert."
+      },
+      "number": 4,
+      "image": "img/houses.jpg",
+      "prompt": "Wie alt bist du umgerechnet in (ganzen) Tagen am 24.12.2019?"
+    },
+    {
+      "answers": [
+        "Harry Potter",
+        "Prinz und Prinzessin",
+        "Beauty and Nerd",
+        "Feenparty"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Die königliche Party hast du bisher noch nicht geschmissen. Vielleicht wird es mal Zeit?"
+      },
+      "number": 5,
+      "image": "img/houses.jpg",
+      "prompt": "Welche Mottoparty hast du noch nicht geschmissen?"
+    },
+    {
+      "answers": [
+        "Anni und Steven",
+        "Lisa O. und Lea",
+        "Sarah und Flo",
+        "Jan-Hendrik und Lisa V."
+      ],
+      "correct": {
+        "index": 0,
+        "text": "Anni und Steven kennen sich tatsächlich am Längsten!"
+      },
+      "number": 5,
+      "image": "img/houses.jpg",
+      "prompt": "Wer von diesen Leuten kennt sich am Längsten?"
     }
   ],
   "title": "Leas Weihnachtsquiz über alles und die Welt"
