@@ -226,9 +226,14 @@ var $indicators = $('<ol>')
             $results_text.text(resultsText(state));
 
             if((state.correct / state.total) === 1) {
-              $results_link.text("Hier Geschenk öffnen");
+              var $results_link = $('<a>')
+                .attr('class', 'results-ratio')
+                .attr('href', resultsLink())
+                .appendTo($results_text);
+
+                $results_link.text("Hier klicken für Geschenke")
             }
-            
+
             $indicators.removeClass('show');
             // indicate the question number
             $indicators.find('li')
@@ -273,15 +278,6 @@ var $indicators = $('<ol>')
   var $results_text = $('<div>')
     .attr('class', 'results-ratio')
     .appendTo($results_slide);
-
-  var $results_link;
-
-  if((state.correct / state.total) === 1) {
-    var $results_link = $('<a>')
-    .attr('class', 'results-ratio')
-    .attr('href', resultsLink())
-    .appendTo($results_text);
-  }
 
   var $restart_button = $("<div>")
     .attr("class", "quiz-answers")
