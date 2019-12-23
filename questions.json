@@ -133,6 +133,21 @@
       "number": 9,
       "image": "img/taubenuss.jpg",
       "prompt": "Wie heißt das Maskottchen des Bertels Beer Pong Vereins?"
+    },
+    {
+      "answers": [
+        "Jonas & Julia",
+        "Lisa & Steven",
+        "Robert & Imke",
+        "Margret & Jürgen"
+      ],
+      "correct": {
+        "index": 0,
+        "text": "Es waren natürlich Jonas und Julia. Zu schade, dass die beiden zumindest gemeinsam den Titel nicht erneut verteidigen werden können.."
+      },
+      "number": 10,
+      "image": "img/koenigspaar.jpg",
+      "prompt": "Welche dieser Paare sind zweifache Gewinner des Bertels Beer Pong Turniers?"
     }
   ],
   "title": "Leas Weihnachtsquiz über alles und die Welt"
