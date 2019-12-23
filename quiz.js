@@ -231,7 +231,7 @@ var $indicators = $('<ol>')
                 .attr('href', resultsLink())
                 .appendTo($results_text);
 
-                $results_link.text("Hier klicken für Geschenke")
+                $results_link.text("Klicke hier, um deine Geschenke zu öffnen.")
             }
 
             $indicators.removeClass('show');
@@ -338,7 +338,7 @@ function resultsText(state) {
 
   switch (true) {
     case (ratio === 1):
-      text = "Die Geschenke hast du dir redlich verdient. Du kannst sie hier öffnen: <a href=\"https://max-vk.github.io/christmas-quiz/img/geschenk.jpg\">Hier</a>";
+      text = "Die Geschenke hast du dir redlich verdient.";
       break;
     case (ratio > 0.9):
       text = "Das war klasse, aber deine Geschenke bekommst du aber erst bei der vollen Punktzahl..";
