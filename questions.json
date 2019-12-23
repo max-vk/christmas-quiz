@@ -118,6 +118,21 @@
       "number": 8,
       "image": "img/corgi.gif",
       "prompt": "Und passend zum Thema Antoni.. Ist das nicht ein süßer Corgi??"
+    },
+    {
+      "answers": [
+        "Stumme Traube",
+        "Hörgeschädigte Pflaume",
+        "Blinde Kuh",
+        "Taube Nuss"
+      ],
+      "correct": {
+        "index": 3,
+        "text": "Taube Nuss, das ist doch klar!"
+      },
+      "number": 9,
+      "image": "img/taubenuss.jpg",
+      "prompt": "Wie heißt das Maskottchen des Bertels Beer Pong Vereins?"
     }
   ],
   "title": "Leas Weihnachtsquiz über alles und die Welt"
