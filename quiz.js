@@ -224,7 +224,11 @@ var $indicators = $('<ol>')
               "% der Fragen richtig beantwortet!"
             );
             $results_text.text(resultsText(state));
-            $results_link.text("Hier Geschenk öffnen");
+
+            if((state.correct / state.total) === 1) {
+              $results_link.text("Hier Geschenk öffnen");
+            }
+            
             $indicators.removeClass('show');
             // indicate the question number
             $indicators.find('li')
@@ -269,6 +273,8 @@ var $indicators = $('<ol>')
   var $results_text = $('<div>')
     .attr('class', 'results-ratio')
     .appendTo($results_slide);
+
+  var $results_link;
 
   if((state.correct / state.total) === 1) {
     var $results_link = $('<a>')
