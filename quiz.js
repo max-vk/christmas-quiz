@@ -359,5 +359,9 @@ function resultsText(state) {
   return text;
 }
 
+function resultsLink() {
+  return "https://max-vk.github.io/christmas-quiz/img/geschenk.jpg";
+}
+
 })(jQuery);
 
