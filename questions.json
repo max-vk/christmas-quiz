@@ -105,6 +105,19 @@
       "number": 7,
       "image": "img/queereye.jpg",
       "prompt": "Welches Mitglied vom \"Queer Eye\"-Cast ist unser Liebling?"
+    },
+    {
+      "answers": [
+        "Nicht wirklich..",
+        "Ja, total!"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Corgis sind immer süß!"
+      },
+      "number": 8,
+      "image": "img/corgi.gif",
+      "prompt": "Und passend zum Thema Antoni.. Ist das nicht ein süßer Corgi??"
     }
   ],
   "title": "Leas Weihnachtsquiz über alles und die Welt"
