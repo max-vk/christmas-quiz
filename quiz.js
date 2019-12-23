@@ -328,7 +328,7 @@ function resultsText(state) {
 
   switch (true) {
     case (ratio === 1):
-      text = "Die Geschenke hast du dir redlich verdient. Du kannst sie hier öffnen: https://max-vk.github.io/christmas-quiz/img/geschenk.jpg";
+      text = "Die Geschenke hast du dir redlich verdient. Du kannst sie hier öffnen: <a href=\"https://max-vk.github.io/christmas-quiz/img/geschenk.jpg\">Hier</a>";
       break;
     case (ratio > 0.9):
       text = "Das war klasse, aber deine Geschenke bekommst du aber erst bei der vollen Punktzahl..";
