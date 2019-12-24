@@ -178,7 +178,21 @@
       "number": 12,
       "image": "img/koenigspaar.jpg",
       "prompt": "Welche dieser Paare sind zweifache Gewinner des Bertels Beer Pong Turniers?"
+    },
+    {
+      "answers": [
+        "Och, ich weiß nicht..",
+        "Nee, keine Lust..",
+        "Jaaaa!! Her mit den Geschenken!"
+      ],
+      "correct": {
+        "index": 2,
+        "text": "Nur voller Enthusiasmus wird belohnt! Aber pass auf, deine Geschenke bekommst du nur, wenn du auch alle Fragen richtig beantwortet hast. :)"
+      },
+      "number": 13,
+      "image": "img/weihnachtsbilder-geschenk.jpg",
+      "prompt": "Das war auch schon die letzte Frage.. sollen wir zur Auswertung gehen und schauen, ob du dir die Geschenke verdient hast?"
     }
   ],
-  "title": "Leas Weihnachtsquiz über alles und die Welt"
+  "title": "Leas Weihnachtsquiz"
 }
